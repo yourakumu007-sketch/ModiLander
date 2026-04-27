@@ -80,7 +80,7 @@ export const SEOFooter: React.FC = () => {
             <span>&copy; {new Date().getFullYear()} ModiLander Arcade Game. All rights reserved.</span>
             <span className="hidden md:inline text-white/20">•</span>
             <span>
-              Engineered by <span className="text-white/60">Prince & Smit</span> | <a href="https://www.instagram.com/z___w___p/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors underline decoration-white/20 underline-offset-4">ZwP Studios</a>
+              Engineered by <span className="text-white/60">Prince & Smit</span> | <a href="https://www.instagram.com/z___w___p/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors underline decoration-white/20 underline-offset-4">ZwP</a>
             </span>
           </div>
         </div>

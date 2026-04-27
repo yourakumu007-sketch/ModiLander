@@ -59,7 +59,7 @@ export const SEOContent: React.FC = () => {
           <div className="space-y-6">
             <h2 className="text-2xl md:text-3xl font-bold text-white/90 tracking-tight">A Commitment to Quality Entertainment</h2>
             <p>
-              ModiLander is carefully developed by passionate independent developers (Prince & Smit) under ZwP Studios. Our core focus was to deliver a high-quality user experience utilizing modern UI/UX design paradigms, such as deep glassmorphism aesthetics, subtle micro-animations, and striking visual contrasts.
+              ModiLander is carefully developed by passionate independent developers (Prince & Smit) under ZwP. Our core focus was to deliver a high-quality user experience utilizing modern UI/UX design paradigms, such as deep glassmorphism aesthetics, subtle micro-animations, and striking visual contrasts.
             </p>
             <p>
               This project is a completely free-to-play, satirical entertainment product. It is specifically designed to provide quick, satisfying gaming sessions that are easy to pick up but difficult to master. By providing this game free of charge, we hope to build a fun community of players who appreciate retro mechanics modernized for the web era.

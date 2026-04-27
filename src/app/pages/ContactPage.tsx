@@ -48,7 +48,7 @@ export const ContactPage: React.FC = () => {
                 </div>
                 <div className="flex flex-col">
                   <span className="text-xs text-white/40 uppercase tracking-wider font-bold">Developer Studio</span>
-                  <span className="text-white font-medium text-base">ZwP Studios</span>
+                  <span className="text-white font-medium text-base">ZwP</span>
                 </div>
               </div>
 

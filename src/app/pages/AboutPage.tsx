@@ -33,7 +33,7 @@ export const AboutPage: React.FC = () => {
 
           <h2 className="text-xl font-bold text-white/80 mt-6 mb-2">The Creators</h2>
           <p>
-            This project was brought to life by <strong>Prince Suthar & Smit Sutariya</strong> under the banner of <strong>ZwP Studios</strong>. We are a duo of passionate web developers and game designers dedicated to pushing the boundaries of what is possible within a mobile browser. Inspiration for this specific project was drawn from the creative concepts of @code.itzpa1 (Pawan Dev).
+            This project was brought to life by <strong>Prince Suthar & Smit Sutariya</strong> under the banner of <strong>ZwP</strong>. We are a duo of passionate web developers and game designers dedicated to pushing the boundaries of what is possible within a mobile browser. Inspiration for this specific project was drawn from the creative concepts of @code.itzpa1 (Pawan Dev).
           </p>
 
           <div className="bg-black/30 p-6 rounded-xl border border-white/5 my-8">
