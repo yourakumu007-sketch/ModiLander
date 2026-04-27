@@ -42,7 +42,11 @@ export const SEOFooter: React.FC = () => {
 
           <div className="flex flex-col items-center md:items-start gap-4">
             <h4 className="font-bold text-white/90 uppercase tracking-widest text-xs mb-2">Game Info</h4>
-            <Link to="/" className="flex items-center gap-2 text-sm text-white/50 hover:text-white transition-colors group">
+            <Link 
+              to="/" 
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              className="flex items-center gap-2 text-sm text-white/50 hover:text-white transition-colors group"
+            >
               <FaGamepad className="text-white/20 group-hover:text-primary transition-colors" /> Play Game
             </Link>
             <Link to="/how-to-play" className="flex items-center gap-2 text-sm text-white/50 hover:text-white transition-colors group">
