@@ -1,11 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router';
-import { FaCaretLeft, FaEnvelope } from 'react-icons/fa';
+import { FaCaretLeft, FaEnvelope, FaMapMarkerAlt, FaGlobe } from 'react-icons/fa';
 
 export const ContactPage: React.FC = () => {
   return (
     <div className="min-h-[100dvh] w-full flex flex-col bg-[#04040f] text-white/80 font-sans p-6 md:p-12 relative overflow-y-auto">
-      {/* Background Glow */}
       <div className="pointer-events-none fixed inset-0 z-0">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[60%] h-[30%] bg-primary/5 blur-[100px] rounded-full" />
       </div>
@@ -19,33 +18,56 @@ export const ContactPage: React.FC = () => {
         
         <div className="space-y-6 text-sm leading-relaxed text-white/70">
           <p className="text-lg font-medium text-white/90 mb-2">
-            Have questions, feedback, or found a bug? We'd love to hear from you.
+            We value our players and community. Whether you have questions, feedback, or business inquiries, we are here to help.
           </p>
           
           <p>
-            ModiLander is actively maintained. If you encounter any issues during gameplay or have suggestions for new features, please don't hesitate to reach out. We are always looking for ways to improve the arcade experience.
+            The ModiLander development team is committed to providing a flawless, high-quality arcade experience. If you encounter any bugs, have suggestions for gameplay improvements, or wish to discuss advertising opportunities, please reach out to us using the information below. We aim to respond to all legitimate inquiries within 48-72 hours.
           </p>
 
           <div className="mt-8 flex flex-col gap-4">
-            <h3 className="font-bold text-white/80 uppercase tracking-widest text-xs">Direct Email</h3>
-            <a 
-              href="mailto:vkpk90100@gmail.com" 
-              className="inline-flex items-center gap-3 bg-white/5 border border-white/10 hover:bg-white/10 transition-colors rounded-xl px-6 py-4 w-fit group"
-            >
-              <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center group-hover:scale-110 transition-transform">
-                <FaEnvelope className="text-primary" />
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a 
+                href="mailto:vkpk90100@gmail.com" 
+                className="flex-1 flex items-center gap-4 bg-white/5 border border-white/10 hover:bg-white/10 transition-colors rounded-xl px-6 py-5 group"
+              >
+                <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <FaEnvelope className="text-primary text-lg" />
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-xs text-white/40 uppercase tracking-wider font-bold">Email Support</span>
+                  <span className="text-white font-medium text-base break-all">vkpk90100@gmail.com</span>
+                </div>
+              </a>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex-1 flex items-center gap-4 bg-white/5 border border-white/10 rounded-xl px-6 py-5">
+                <div className="w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center">
+                  <FaGlobe className="text-blue-500 text-lg" />
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-xs text-white/40 uppercase tracking-wider font-bold">Developer Studio</span>
+                  <span className="text-white font-medium text-base">ZwP Studios</span>
+                </div>
               </div>
-              <div className="flex flex-col">
-                <span className="text-xs text-white/40 uppercase tracking-wider font-bold">Email us at</span>
-                <span className="text-white font-medium text-base">vkpk90100@gmail.com</span>
+
+              <div className="flex-1 flex items-center gap-4 bg-white/5 border border-white/10 rounded-xl px-6 py-5">
+                <div className="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center">
+                  <FaMapMarkerAlt className="text-green-500 text-lg" />
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-xs text-white/40 uppercase tracking-wider font-bold">Location</span>
+                  <span className="text-white font-medium text-base">Gujarat, India</span>
+                </div>
               </div>
-            </a>
+            </div>
           </div>
 
           <div className="mt-8 pt-6 border-t border-white/5">
-            <h3 className="font-bold text-white/80 uppercase tracking-widest text-xs mb-3">For AdSense & Business Inquiries</h3>
-            <p className="text-white/50 text-xs">
-              Please use the email address above with the subject line <strong>[Business Inquiry]</strong> so it can be routed to the appropriate team member.
+            <h3 className="font-bold text-white/80 uppercase tracking-widest text-xs mb-3">For AdSense & Advertising Inquiries</h3>
+            <p className="text-white/60">
+              We welcome partnerships with ad networks and brands. If you are reaching out regarding website monetization, sponsorships, or Google AdSense matters, please use the email address above with the subject line <strong>[Business Inquiry]</strong> to ensure prompt routing to our administrative team.
             </p>
           </div>
         </div>

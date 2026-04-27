@@ -4,6 +4,7 @@ import { ShareSheet } from "../components/ShareSheet";
 import { IconVolume, IconMute, IconShare, IconInstagram, IconGitHub, IconLinkedIn } from "../components/Icons";
 import { ReviewForm } from "../components/ReviewForm";
 import { SEOFooter } from "../components/SEOFooter";
+import { SEOContent } from "../components/SEOContent";
 
 
 // ── All character images ──────────────────────────────────────────────────────
@@ -564,6 +565,7 @@ export const StartPage: React.FC = () => {
         </div>
       </main>
 
+      <SEOContent />
       <SEOFooter />
       <ShareSheet isOpen={isShareOpen} onClose={() => setIsShareOpen(false)} />
     </div>

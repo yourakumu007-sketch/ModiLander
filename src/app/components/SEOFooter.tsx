@@ -1,63 +1,90 @@
 import React from "react";
 import { Link } from "react-router";
+import { FaTwitter, FaInstagram, FaGamepad, FaInfoCircle, FaShieldAlt, FaFileContract, FaEnvelope } from 'react-icons/fa';
+import Logo from "../../assets/favicon.png";
 
 export const SEOFooter: React.FC = () => {
   return (
-    <footer id="seo-content" className="w-full bg-[#04040f] border-t border-white/5 py-16 px-6 sm:px-12 z-0 relative flex flex-col items-center selection:bg-white/20">
-      <div className="max-w-4xl w-full flex flex-col gap-8 text-center sm:text-left text-white/70 font-sans">
+    <footer id="seo-content" className="w-full bg-[#04040f] border-t border-white/5 pt-16 pb-12 px-6 sm:px-12 z-0 relative flex flex-col items-center selection:bg-white/20 overflow-hidden">
+      {/* Background effect */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+      
+      <div className="max-w-6xl w-full flex flex-col gap-12 text-center sm:text-left text-white/70 font-sans relative z-10">
         
-        <div>
-          <h1 className="text-3xl font-black text-white/90 tracking-tight mb-3">ModiLander — The Ultimate Political Maze Game</h1>
-          <p className="text-base leading-relaxed">
-            Welcome to <strong>ModiLander</strong>, India's most sarcastic, premium, and thrilling web-based arcade game! Experience high-octane maze chasing action right in your browser. Choose your favorite politician—whether it's the charismatic Modiji or the philosophizing Rahul G—and outrun the opposition through dynamically styled labyrinths. This game is highly optimized for mobile devices and desktop play.
-          </p>
+        {/* Footer Navigation & Trust Signals */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-white/5">
+          
+          <div className="md:col-span-2 flex flex-col items-center md:items-start gap-4">
+            <div className="flex items-center gap-4">
+              <div className="relative group">
+                <div className="absolute -inset-1.5 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+                <div className="relative w-12 h-12 rounded-xl bg-[#0a0a0a] border border-white/10 flex items-center justify-center overflow-hidden shadow-2xl">
+                  <img src={Logo} alt="ModiLander Logo" className="w-9 h-9 object-contain transform group-hover:scale-110 transition-transform duration-500" />
+                </div>
+              </div>
+              <div className="flex flex-col">
+                <h3 className="text-2xl font-black text-white/90 tracking-tighter leading-none">ModiLander</h3>
+                <span className="text-[9px] font-black tracking-[4px] uppercase text-orange-500/80 mt-1">Arcade Elite</span>
+              </div>
+            </div>
+            <p className="text-sm text-white/50 text-center md:text-left leading-relaxed max-w-sm">
+              India's premier web-based satirical maze arcade game. Play instantly, dodge the opposition, and secure your high score.
+            </p>
+            <div className="flex gap-4 mt-4">
+               <a href="https://twitter.com/intent/tweet?text=Play%20ModiLander%20-%20https://modilander.vercel.app/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-white/10 hover:text-blue-400 transition-all text-white/40">
+                 <FaTwitter size={16} />
+               </a>
+               <a href="https://www.instagram.com/z___w___p/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-white/10 hover:text-pink-500 transition-all text-white/40">
+                 <FaInstagram size={16} />
+               </a>
+            </div>
+          </div>
+
+          <div className="flex flex-col items-center md:items-start gap-4">
+            <h4 className="font-bold text-white/90 uppercase tracking-widest text-xs mb-2">Game Info</h4>
+            <Link to="/" className="flex items-center gap-2 text-sm text-white/50 hover:text-white transition-colors group">
+              <FaGamepad className="text-white/20 group-hover:text-primary transition-colors" /> Play Game
+            </Link>
+            <Link to="/how-to-play" className="flex items-center gap-2 text-sm text-white/50 hover:text-white transition-colors group">
+              <FaInfoCircle className="text-white/20 group-hover:text-primary transition-colors" /> How to Play
+            </Link>
+            <Link to="/about" className="flex items-center gap-2 text-sm text-white/50 hover:text-white transition-colors group">
+              <FaShieldAlt className="text-white/20 group-hover:text-primary transition-colors" /> About Developers
+            </Link>
+          </div>
+
+          <div className="flex flex-col items-center md:items-start gap-4">
+            <h4 className="font-bold text-white/90 uppercase tracking-widest text-xs mb-2">Legal & Support</h4>
+            <Link to="/privacy" className="flex items-center gap-2 text-sm text-white/50 hover:text-white transition-colors group">
+              <FaShieldAlt className="text-white/20 group-hover:text-primary transition-colors" /> Privacy Policy
+            </Link>
+            <Link to="/terms" className="flex items-center gap-2 text-sm text-white/50 hover:text-white transition-colors group">
+              <FaFileContract className="text-white/20 group-hover:text-primary transition-colors" /> Terms of Service
+            </Link>
+            <Link to="/contact" className="flex items-center gap-2 text-sm text-white/50 hover:text-white transition-colors group">
+              <FaEnvelope className="text-white/20 group-hover:text-primary transition-colors" /> Contact Us
+            </Link>
+          </div>
+
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-          <div className="glass-panel rounded-2xl p-6 bg-white/5 border border-white/10 text-left">
-            <h2 className="text-xl font-bold text-white/90 mb-3">🎮 How to Play</h2>
-            <ul className="list-disc list-inside space-y-2 text-sm leading-relaxed">
-              <li><strong>Collect Points:</strong> Eat all the glowing dots in the political corridors.</li>
-              <li><strong>Activate Power Mode:</strong> Grab the large energy pills to turn the tables!</li>
-              <li><strong>Evasion Tactics:</strong> Dodge the unrelenting opposition ghosts tracking your every move.</li>
-              <li><strong>Controls:</strong> Use arrow keys on desktop or ultra-responsive swipe/D-Pad controls on mobile.</li>
-            </ul>
+        {/* Legal Disclaimer & Copyright */}
+        <div className="flex flex-col items-center text-center gap-6 pt-4">
+          <div className="glass-panel px-6 py-4 rounded-xl border border-white/5 max-w-4xl text-left">
+            <p className="text-[11px] text-white/40 leading-relaxed">
+              <strong className="text-white/60">Disclaimer:</strong> This game is a work of political satire created strictly for entertainment and amusement purposes. The characters, situations, and events depicted are fictional and exaggerated. It does not represent factual events and is not affiliated with, endorsed by, or meant to accurately represent any real-life political figures, organizations, or governments.
+            </p>
           </div>
           
-          <div className="glass-panel rounded-2xl p-6 bg-white/5 border border-white/10 text-left">
-            <h2 className="text-xl font-bold text-white/90 mb-3">✨ Core Features</h2>
-            <ul className="list-disc list-inside space-y-2 text-sm leading-relaxed">
-              <li><strong>100% Free:</strong> Play instantly on any browser or mobile device.</li>
-              <li><strong>Premium UI:</strong> Sleek glassmorphism mixed with sharp micro-animations.</li>
-              <li><strong>Responsive AI:</strong> Chasing ghosts powered by dynamic (BFS) pathfinding.</li>
-              <li><strong>Difficulty Settings:</strong> Pick from Easy, Medium, or Hard modes.</li>
-              <li><strong>PWA Support:</strong> Install directly to your device for offline play.</li>
-            </ul>
+          <div className="text-xs text-white/40 flex flex-col md:flex-row items-center gap-2 md:gap-4 font-medium">
+            <span>&copy; {new Date().getFullYear()} ModiLander Arcade Game. All rights reserved.</span>
+            <span className="hidden md:inline text-white/20">•</span>
+            <span>
+              Engineered by <span className="text-white/60">Prince & Smit</span> | <a href="https://www.instagram.com/z___w___p/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors underline decoration-white/20 underline-offset-4">ZwP Studios</a>
+            </span>
           </div>
         </div>
 
-        <div className="glass-panel rounded-full overflow-hidden inline-flex sm:mx-auto max-w-fit mt-4 border border-white/10 bg-white/5 shadow-xl">
-           <a href="https://twitter.com/intent/tweet?text=Play%20ModiLander%20-%20the%20funniest%20political%20maze%20game!%20%F0%9F%8F%86%20https://modilander.vercel.app/" target="_blank" rel="noopener noreferrer" className="px-6 py-3 text-sm font-semibold tracking-wide hover:bg-white/10 hover:text-white transition-colors border-r border-white/10 flex items-center gap-2">
-             Share on Twitter
-           </a>
-           <a href="https://wa.me/?text=Play%20ModiLander%20-%20the%20funniest%20political%20maze%20game!%20%F0%9F%8F%86%20https://modilander.vercel.app/" target="_blank" rel="noopener noreferrer" className="px-6 py-3 text-sm font-semibold tracking-wide hover:bg-[#25D366]/20 transition-colors flex items-center gap-2 text-[#25D366]">
-             Share on WhatsApp
-           </a>
-        </div>
-
-        <div className="text-center text-xs text-white/30 pt-8 mt-4 border-t border-white/5 flex flex-col gap-3">
-          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 font-semibold uppercase tracking-widest text-[#f97316]">
-            <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <Link to="/about" className="hover:text-white transition-colors">About</Link>
-            <Link to="/contact" className="hover:text-white transition-colors">Contact</Link>
-          </div>
-          <div>
-            &copy; {new Date().getFullYear()} ModiLander Arcade Game. Engineered and Designed by Prince & Smit.<br />
-            Inspired by @code.itzpa1 (PAWAN ▪︎ DEV)<br />
-            This game created by <a href="https://www.instagram.com/z___w___p/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors underline decoration-white/20 underline-offset-2">ZwP</a><br />
-            A political satire maze game created purely for amusement. No actual politicians were harmed in the making of this software.
-          </div>
-        </div>
       </div>
     </footer>
   );

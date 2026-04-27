@@ -5,7 +5,6 @@ import { FaCaretLeft } from 'react-icons/fa';
 export const PrivacyPage: React.FC = () => {
   return (
     <div className="min-h-[100dvh] w-full flex flex-col bg-[#04040f] text-white/80 font-sans p-6 md:p-12 relative overflow-y-auto">
-      {/* Background Glow */}
       <div className="pointer-events-none fixed inset-0 z-0">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[60%] h-[30%] bg-primary/5 blur-[100px] rounded-full" />
       </div>
@@ -18,50 +17,68 @@ export const PrivacyPage: React.FC = () => {
         <h1 className="text-3xl md:text-4xl font-black text-white/90 mb-8 border-b border-white/10 pb-4 tracking-tight">Privacy Policy</h1>
         
         <div className="space-y-8 text-sm leading-relaxed text-white/70">
+          <p>Effective Date: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+          
           <section>
-            <h2 className="text-xl font-bold text-white/80 mb-3 tracking-wide">1. Information We Collect</h2>
+            <h2 className="text-xl font-bold text-white/80 mb-3 tracking-wide">1. Introduction</h2>
             <p>
-              ModiLander is designed primarily for entertainment. We do <strong>not</strong> actively collect personally identifiable information (PII) such as names, addresses, or phone numbers unless you explicitly provide them to us (e.g., via a contact form or email).
+              Welcome to ModiLander ("we," "our," or "us"). We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, and share information when you visit our website and play our web-based arcade game.
             </p>
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-white/80 mb-3 tracking-wide">2. Use of Cookies and Web Beacons</h2>
+            <h2 className="text-xl font-bold text-white/80 mb-3 tracking-wide">2. Information We Collect</h2>
             <p>
-              We use cookies to personalize content and ads, to provide social media features, and to analyze our traffic. 
-              A "cookie" is a small data file transferred to your device that recognizes and identifies your browser.
+              ModiLander is designed as a free-to-play browser game. We do <strong>not</strong> require you to create an account, nor do we actively collect personally identifiable information (PII) such as your name, email, or physical address to play the game.
+            </p>
+            <p className="mt-2">
+              <strong>Automatically Collected Information:</strong> When you visit our website, our servers and third-party partners (such as analytics and advertising providers) may automatically record certain non-identifiable technical data, including your IP address, browser type, device type, operating system, and geographic location (at the city or country level).
             </p>
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-white/80 mb-3 tracking-wide">3. Third-Party Advertising (Google AdSense)</h2>
+            <h2 className="text-xl font-bold text-white/80 mb-3 tracking-wide">3. Cookies and Tracking Technologies</h2>
             <p>
-              We use third-party advertising companies, including Google AdSense, to serve ads when you visit our website. These companies may use information (not including your name, address, email address, or telephone number) about your visits to this and other websites in order to provide advertisements about goods and services of interest to you.
+              We use cookies, web beacons, and similar tracking technologies to enhance your experience, analyze site traffic, and serve targeted advertisements.
             </p>
             <ul className="list-disc pl-5 mt-2 space-y-1">
-              <li>Google, as a third-party vendor, uses cookies to serve ads on our site.</li>
-              <li>Google's use of the DART cookie enables it to serve ads to our users based on previous visits to our site and other sites on the Internet.</li>
-              <li>Users may opt-out of the use of the DART cookie by visiting the Google Ad and Content Network privacy policy.</li>
+              <li><strong>Essential Cookies:</strong> Necessary for the basic functionality of the website.</li>
+              <li><strong>Analytics Cookies:</strong> Help us understand how users interact with our game so we can improve performance.</li>
+              <li><strong>Advertising Cookies:</strong> Used by our advertising partners to show relevant ads.</li>
             </ul>
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-white/80 mb-3 tracking-wide">4. External Links</h2>
+            <h2 className="text-xl font-bold text-white/80 mb-3 tracking-wide">4. Third-Party Advertising (Google AdSense)</h2>
             <p>
-              Our website may contain links to external sites that are not operated by us. Please be aware that we have no control over the content and practices of these sites, and cannot accept responsibility or liability for their respective privacy policies.
+              We use Google AdSense to display ads. Google and its partners use cookies to serve ads based on your prior visits to our website or other websites.
+            </p>
+            <ul className="list-disc pl-5 mt-2 space-y-1">
+              <li>Google uses the DoubleClick (DART) cookie to enable it and its partners to serve ads based on your browsing history.</li>
+              <li>You may opt-out of personalized advertising by visiting <a href="https://myadcenter.google.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Google's Ads Settings</a>.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-bold text-white/80 mb-3 tracking-wide">5. Data Security</h2>
+            <p>
+              We implement reasonable security measures to protect against unauthorized access or alteration of any data we collect. However, please be aware that no method of transmission over the Internet or method of electronic storage is 100% secure.
             </p>
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-white/80 mb-3 tracking-wide">5. Changes to This Policy</h2>
+            <h2 className="text-xl font-bold text-white/80 mb-3 tracking-wide">6. Children's Privacy</h2>
             <p>
-              We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes.
+              Our website is intended for a general audience. We do not knowingly collect personal information from children under the age of 13. If you believe we have inadvertently collected data from a child, please contact us immediately so we can remove it.
             </p>
           </section>
 
-          <p className="text-xs text-white/40 pt-6 mt-6 border-t border-white/5">
-            Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
-          </p>
+          <section>
+            <h2 className="text-xl font-bold text-white/80 mb-3 tracking-wide">7. Contact Us</h2>
+            <p>
+              If you have any questions or concerns about this Privacy Policy, please contact us via our <Link to="/contact" className="text-primary hover:underline">Contact Page</Link>.
+            </p>
+          </section>
         </div>
       </div>
     </div>
