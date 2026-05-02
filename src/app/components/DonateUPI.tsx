@@ -28,7 +28,7 @@ export const DonateUPI: React.FC = () => {
         </span>
       </a>
 
-      <div className="flex flex-col items-center gap-2 mt-1">
+      <div className="flex flex-col items-center gap-2 mt-1 w-full">
         <div className="p-2 bg-white/95 rounded-xl shadow-inner">
           <img
             src={qrCode}
@@ -36,9 +36,29 @@ export const DonateUPI: React.FC = () => {
             className="w-20 h-20 object-contain rounded-md"
           />
         </div>
-        <p className="text-[8px] font-medium tracking-[2px] text-white/40 uppercase">
-          Scan QR if button doesn’t work
-        </p>
+        
+        <div className="flex flex-col items-center gap-1.5">
+          <p className="text-[9px] font-bold tracking-[2px] text-white/60 uppercase">
+            9033640100@upi
+          </p>
+          <p className="text-[7px] font-medium tracking-[1px] text-white/30 uppercase">
+            Scan QR if button doesn’t work
+          </p>
+        </div>
+
+        <a
+          href={qrCode}
+          download="ModiLander_Support_QR.png"
+          className="mt-1 w-full flex justify-center items-center py-2 rounded-lg transition-all duration-300 hover:bg-white/10 active:scale-[0.98]"
+          style={{
+            background: "rgba(255, 255, 255, 0.03)",
+            border: "1px solid rgba(255, 255, 255, 0.1)",
+          }}
+        >
+          <span className="text-[9px] font-bold tracking-[2px] uppercase text-white/60">
+            Download QR
+          </span>
+        </a>
       </div>
     </div>
   );
