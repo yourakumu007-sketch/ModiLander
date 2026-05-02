@@ -24,7 +24,7 @@ export const DonateUPI: React.FC = () => {
         }}
       >
         <span className="text-xs font-bold tracking-[4px] uppercase text-white drop-shadow-md">
-          Pay via UPI
+          Support ModiLander 🚀
         </span>
       </a>
 
