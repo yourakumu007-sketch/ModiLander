@@ -11,7 +11,7 @@ export const DonateUPI: React.FC = () => {
       }}
     >
       <h3 className="text-[10px] font-bold tracking-[3px] uppercase text-white/70">
-        Enjoyed the game? Support me ❤️
+        Enjoyed the game? Buy me a coffee ☕
       </h3>
 
       <a
