@@ -5,7 +5,7 @@ import { IconVolume, IconMute, IconShare, IconInstagram, IconGitHub, IconLinkedI
 import { ReviewForm } from "../components/ReviewForm";
 import { SEOFooter } from "../components/SEOFooter";
 import { SEOContent } from "../components/SEOContent";
-
+import { DonateUPI } from "../components/DonateUPI";
 
 // ── All character images ──────────────────────────────────────────────────────
 import modi5 from "./../../assets/characters/modi/5.png";
@@ -17,6 +17,7 @@ import rahul3 from "./../../assets/characters/rahul/3.png";
 import Logo from "./../../assets/favicon.png";
 import modiMusic from "./../../assets/audio/wah-modiji-wah.mp3";
 import rahulMusic from "./../../assets/audio/maja-aaya.mp3";
+import { WiDaySnowThunderstorm } from "react-icons/wi";
 
 // ── Live ticker headlines ─────────────────────────────────────────────────────
 const HEADLINES = [
@@ -515,6 +516,8 @@ export const StartPage: React.FC = () => {
               </div>
             ))}
           </div>
+
+          <DonateUPI />
 
           {/* ── Credits ── */}
           <div className="flex flex-col gap-3">

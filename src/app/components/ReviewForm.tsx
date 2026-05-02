@@ -17,7 +17,7 @@ export const ReviewForm: React.FC<ReviewFormProps> = ({ accentColor = "#f97316" 
       return;
     }
     const starText = "⭐".repeat(rating);
-    const text = encodeURIComponent(`Hi! Here's my vote: ${rating}/5 ${starText}. Review: ${message}`);
+    const text = encodeURIComponent(`Hi! Here's my Rating For ModiLander: ${rating}/5 ${starText}. Review: ${message}`);
     
     const phones = ["9033640100", "9016590044"];
     
