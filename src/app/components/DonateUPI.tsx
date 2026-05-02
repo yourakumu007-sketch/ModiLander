@@ -1,4 +1,5 @@
 import React from "react";
+import qrCode from "../../assets/QR.png";
 
 export const DonateUPI: React.FC = () => {
   return (
@@ -30,7 +31,7 @@ export const DonateUPI: React.FC = () => {
       <div className="flex flex-col items-center gap-2 mt-1">
         <div className="p-2 bg-white/95 rounded-xl shadow-inner">
           <img
-            src="/upi-qr.png"
+            src={qrCode}
             alt="UPI QR Code"
             className="w-20 h-20 object-contain rounded-md"
           />
