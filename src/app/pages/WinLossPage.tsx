@@ -5,6 +5,7 @@ import html2canvas from "html2canvas";
 import { IconHome, IconShare, IconInstagram, IconRefresh, IconTrophy, IconSkull, IconDownload, IconX } from "../components/Icons";
 import { ReviewForm } from "../components/ReviewForm";
 import { SEOFooter } from "../components/SEOFooter";
+import { DonateUPI } from "../components/DonateUPI";
 
 import modiVideo from "./../../assets/win/modiwin.mp4";
 import rahulVideo from "./../../assets/win/rahulwin.mp4";
@@ -602,6 +603,7 @@ export const WinLossPage: React.FC = () => {
             </button>
           </div>
 
+          <DonateUPI />
 
           {/* Credits */}
           <p className="text-center text-[8px] tracking-[3px] uppercase" style={{ color: "rgba(255,255,255,0.15)" }}>

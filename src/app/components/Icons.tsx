@@ -1,4 +1,4 @@
-import React from "react";
+ import React from "react";
 
 type P = { size?: number; color?: string; className?: string; style?: React.CSSProperties };
 

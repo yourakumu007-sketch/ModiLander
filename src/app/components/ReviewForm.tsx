@@ -19,7 +19,7 @@ export const ReviewForm: React.FC<ReviewFormProps> = ({ accentColor = "#f97316" 
     const starText = "⭐".repeat(rating);
     const text = encodeURIComponent(`Hi! Here's my Rating For ModiLander: ${rating}/5 ${starText}. Review: ${message}`);
     
-    const phones = ["9033640100", "9016590044"];
+    const phones = ["903364010 0", "9016590044"];
     
     // Attempt to open both (browsers may ask for permission for the second popup)
     phones.forEach((phone, index) => {

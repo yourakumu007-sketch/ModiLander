@@ -36,7 +36,7 @@ export const DonateUPI: React.FC = () => {
             className="w-20 h-20 object-contain rounded-md"
           />
         </div>
-        
+
         <div className="flex flex-col items-center gap-1.5">
           <p className="text-[9px] font-bold tracking-[2px] text-white/60 uppercase">
             9033640100@upi
