@@ -602,9 +602,7 @@ export const WinLossPage: React.FC = () => {
               <span>{isGeneratingStory ? "GENERATING..." : "ADD TO INSTAGRAM STORY"}</span>
             </button>
           </div>
-
-          <DonateUPI />
-
+          
           {/* Credits */}
           <p className="text-center text-[8px] tracking-[3px] uppercase" style={{ color: "rgba(255,255,255,0.15)" }}>
             MODI_LANDER · PRINCE &amp; SMIT · For entertainment only

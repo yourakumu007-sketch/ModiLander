@@ -28,7 +28,7 @@ export const ContactPage: React.FC = () => {
           <div className="mt-8 flex flex-col gap-4">
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
-                href="mailto:vkpk90100@gmail.com" 
+                href="yourakumu007@gmail.com" 
                 className="flex-1 flex items-center gap-4 bg-white/5 border border-white/10 hover:bg-white/10 transition-colors rounded-xl px-6 py-5 group"
               >
                 <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -36,7 +36,7 @@ export const ContactPage: React.FC = () => {
                 </div>
                 <div className="flex flex-col">
                   <span className="text-xs text-white/40 uppercase tracking-wider font-bold">Email Support</span>
-                  <span className="text-white font-medium text-base break-all">vkpk90100@gmail.com</span>
+                  <span className="text-white font-medium text-base break-all">yourakumu007@gmail.com</span>
                 </div>
               </a>
             </div>
@@ -58,7 +58,7 @@ export const ContactPage: React.FC = () => {
                 </div>
                 <div className="flex flex-col">
                   <span className="text-xs text-white/40 uppercase tracking-wider font-bold">Location</span>
-                  <span className="text-white font-medium text-base">Gujarat, India</span>
+                  <span className="text-white font-medium text-base">Rtanpur, Bankura, India</span>
                 </div>
               </div>
             </div>

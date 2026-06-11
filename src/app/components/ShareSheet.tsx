@@ -47,7 +47,7 @@ export const ShareSheet: React.FC<ShareSheetProps> = ({ isOpen, onClose, score, 
           </h2>
           <div className="flex flex-col items-end gap-0.5">
             <span className="text-[8px] tracking-[3px] text-white/30 font-bold uppercase">MODI_LANDER</span>
-            <span className="text-[7px] tracking-[2px] text-white/20">by PRINCE &amp; SMIT</span>
+            <span className="text-[7px] tracking-[2px] text-white/20">by PRINCE</span>
           </div>
           <button
             onClick={onClose}

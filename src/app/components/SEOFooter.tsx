@@ -31,10 +31,10 @@ export const SEOFooter: React.FC = () => {
               India's premier web-based satirical maze arcade game. Play instantly, dodge the opposition, and secure your high score.
             </p>
             <div className="flex gap-4 mt-4">
-               <a href="https://twitter.com/intent/tweet?text=Play%20ModiLander%20-%20https://modilander.vercel.app/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-white/10 hover:text-blue-400 transition-all text-white/40">
+               <a href="https://x.com/PrinceDaszon/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-white/10 hover:text-blue-400 transition-all text-white/40">
                  <FaTwitter size={16} />
                </a>
-               <a href="https://www.instagram.com/z___w___p/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-white/10 hover:text-pink-500 transition-all text-white/40">
+               <a href="https://www.instagram.com/_itx.me_prince_/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-white/10 hover:text-pink-500 transition-all text-white/40">
                  <FaInstagram size={16} />
                </a>
             </div>

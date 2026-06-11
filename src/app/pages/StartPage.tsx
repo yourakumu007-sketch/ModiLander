@@ -5,7 +5,6 @@ import { IconVolume, IconMute, IconShare, IconInstagram, IconGitHub, IconLinkedI
 import { ReviewForm } from "../components/ReviewForm";
 import { SEOFooter } from "../components/SEOFooter";
 import { SEOContent } from "../components/SEOContent";
-import { DonateUPI } from "../components/DonateUPI";
 
 // ── All character images ──────────────────────────────────────────────────────
 import modi5 from "./../../assets/characters/modi/5.png";
@@ -81,19 +80,10 @@ const CHARACTERS = [
 const CREATORS = [
   {
     name: "PRINCE",
-    ig: "https://www.instagram.com/zwischenweg/",
-    gh: "https://github.com/PRINCESTR",
-    li: "https://www.linkedin.com/in/princesuthar",
-    handle: "@zwischenweg",
+    ig: "https://www.instagram.com/_itx.me_prince_/",
+    gh: "https://github.com/yourakumu007-sketch",
     color: "#8b5cf6"
-  },
-  {
-    name: "SMIT",
-    ig: "https://www.instagram.com/sutariya_smit_/",
-    gh: "https://github.com/PRINCESTR",
-    handle: "@sutariya_smit_",
-    color: "#00e5ff"
-  },
+  },,
 ];
 
 // ── Ticker ────────────────────────────────────────────────────────────────────
@@ -311,7 +301,7 @@ export const StartPage: React.FC = () => {
           </div>
           <div className="flex flex-col leading-tight">
             <span className="text-xs font-black tracking-[4px] text-white/90 uppercase">Modi_Lander</span>
-            <span className="text-[8px] tracking-[2px] font-medium" style={{ color: "rgba(255,255,255,0.4)" }}>by Prince &amp; Smit</span>
+            <span className="text-[8px] tracking-[2px] font-medium" style={{ color: "rgba(255,255,255,0.4)" }}>by Prince</span>
           </div>
         </div>
         <div className="flex gap-2">
@@ -517,8 +507,6 @@ export const StartPage: React.FC = () => {
             ))}
           </div>
 
-          <DonateUPI />
-
           {/* ── Credits ── */}
           <div className="flex flex-col gap-3">
             <div className="h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.07), transparent)" }} />
@@ -534,7 +522,6 @@ export const StartPage: React.FC = () => {
                     style={{ background: `linear-gradient(180deg, ${c.color}, transparent)` }} />
                   <div className="flex flex-col gap-0.5">
                     <span className="text-xs font-bold tracking-[1px] text-white/90">{c.name}</span>
-                    <span className="text-[8px] tracking-wide text-white/40">{c.handle}</span>
                   </div>
                   <div className="flex gap-1.5 ml-2">
                     <a href={c.ig} target="_blank" rel="noopener noreferrer"
@@ -547,13 +534,6 @@ export const StartPage: React.FC = () => {
                       title="GitHub">
                       <IconGitHub size={13} color="rgba(255,255,255,0.7)" />
                     </a>
-                    {c.li && (
-                      <a href={c.li} target="_blank" rel="noopener noreferrer"
-                        className="w-7 h-7 rounded-full flex items-center justify-center transition-all bg-white/5 hover:bg-white/10"
-                        title="LinkedIn">
-                        <IconLinkedIn size={11} color="rgba(255,255,255,0.7)" />
-                      </a>
-                    )}
                   </div>
                 </div>
               ))}
