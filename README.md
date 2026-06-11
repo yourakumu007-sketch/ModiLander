@@ -43,7 +43,7 @@ Created by **Prince**.
 
 ```bash
 # Clone the repo
-git clone 
+git clone https://github.com/yourakumu007-sketch/ModiLander.git
 cd ModiLander
 
 # Install dependencies
